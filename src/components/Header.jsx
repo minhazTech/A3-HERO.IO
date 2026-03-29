@@ -9,9 +9,9 @@ const Header = () => {
     return (
        <header className="w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className='mx-auto flex h-16 items-center justify-between px-4 md:px-8'>
-        <Link to="/" className="flex items-center gap-2">
+        <Link  to="/" className="flex items-center gap-2">
           <img src={logo} alt="Hero.io" className='h-8' />
-          <span className='font-bold text-{#632EE3} text-xl '>Hero.IO</span>
+          <span className='font-bold text-[#632EE3] text-xl '>Hero.IO</span>
         </Link>
          <nav className="hidden md:flex items-center gap-8">
             <NavLink
