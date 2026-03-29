@@ -3,6 +3,8 @@ import { Search } from "lucide-react";
 import  AppCard  from "../components/AppCard";
 import appsData from "../data/apps";
 import  Loader  from "../components/Loader";
+import notFound from "../assets/error-404.png";
+
 
 const AllApps = () => {
 
@@ -24,8 +26,8 @@ const AllApps = () => {
 
     if (searchQuery) {
       const lowerQuery = searchQuery.toLowerCase();
-      result = result.filter((apps) =>
-        apps.title.toLowerCase().includes(lowerQuery)
+      result = result.filter((app) =>
+        app.title.toLowerCase().includes(lowerQuery)
       );
     }
 
@@ -86,7 +88,7 @@ const AllApps = () => {
           </div>
         ) : (
           <div className="py-20 text-center flex flex-col items-center">
-            <img src="/assets/not-found.png" alt="Not found" className="w-64 h-64 mb-6" />
+            <img src={notFound} alt="Not found" className="w-64 h-64 mb-6" />
             <h3 className="text-2xl font-bold text-slate-900 mb-2">OPPS!! APP NOT FOUND</h3>
             <p className="text-slate-600">The App you are requesting is not found on our system. please try another apps</p>
           </div>
