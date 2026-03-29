@@ -1,3 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* Reset DaisyUI heading overrides so Tailwind works normally */
+ h2 {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

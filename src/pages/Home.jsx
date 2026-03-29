@@ -1,10 +1,15 @@
 import React from 'react';
+import HeroStatus from '../components/HeroStatus';
+import TopAppsSection from '../components/TopAppsSection'
 
 const Home = () => {
     return (
-        <div>
-            
+        <div className='"flex flex-col"'>
+           <HeroStatus />
+           <TopAppsSection/>
         </div>
+       
+
     );
 };
 

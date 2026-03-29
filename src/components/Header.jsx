@@ -51,7 +51,7 @@ const Header = () => {
             {/* GitHub Button Section */}
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/minhazTech/A3-HERO.IO/graphs/contributors"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#632EE3] active:scale-95 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white shadow hover:opacity-90 h-9 px-4 py-2 gap-2"
